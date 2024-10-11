@@ -28,7 +28,18 @@ sudo apt install nginx
 
 5. Para verificar se o servidor ngnix está online e rodando:
 
-   Abra o browser clique na barra de pesquisa e digite localhost 
+   Abra o browser clique na barra de pesquisa e digite localhost
+   
+Para conectar o Git do terminal ao GitHub, é necessário a criação e autenticação de uma chave SSH. Aqui estão os passos detalhados\;
 
+Criar uma chave SSH: Primeiro, você precisa gerar uma chave SSH no seu computador. Abra o terminal e digite:
+```
+ssh-keygen -t ed25519 -C "seuemail"
+```
+Substitua "seu-email@example.com" pelo e-mail associado à sua conta no GitHub. 
 
+Para conectar o seu terminal git ao github digite o código: 
+```
+ssh -T git@github.com
+```
 
