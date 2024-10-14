@@ -52,7 +52,7 @@ Crie um arquivo de script chamado script.sh
 
 nano script.sh
 
-Cole o seguinte código no arquivo ascript.sh que está disponivel no repositório script.sh no github.
+Cole o seguinte código no arquivo script.sh que está disponivel no repositório script.sh no github.
 
 
 
@@ -80,13 +80,9 @@ Para verificar os arquivos de saída
 
 Digite os comandos abaixo:
 
-crontab -e = Criar um itinerário, para abrir o editor e criar um cronograma para cronometrar o tempo que vai ser executado o script.
+Depois digite 1 no terminal de comandos 
 
-Depois digite 1 e de enter no terminal de comandos:
-
-```
-1
-```
+1 = Para escolher o editor de texto.
 
 9. Para verificar se o servidor ngnix está funcionando 
    Abra o browser clique na barra de pesquisa e digite localhost
