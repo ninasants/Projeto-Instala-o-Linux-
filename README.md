@@ -20,7 +20,7 @@ Installation successful!
 ```
 Leia ``` man sudo_root ```para mais detalhes.
 
-4. No terminal digite o comando:
+4. Para instalar o nginx, no terminal digite o comando:
 
 ```
 sudo apt install nginx
@@ -42,4 +42,81 @@ Para conectar o seu terminal git ao github digite o código:
 ```
 ssh -T git@github.com
 ```
+Depois, inicie o serviço do Nginx e habilite-o para iniciar automaticamente na inicialização:
 
+systemctl start nginx
+systemctl enable nginx
+
+6. Criar o script de validação
+Crie um arquivo de script chamado script.sh
+
+nano script.sh
+
+Cole o seguinte código no arquivo ascript.sh que está disponivel no repositório script.sh no github.
+
+
+
+7. Dar permissão de execução ao script
+Depois de salvar o arquivo, saia do editor e dê permissão de execução ao script:
+
+Digite os códigos abaixo: 
+```
+chmod 777 script.sh
+./script.sh 
+```
+
+8. Automatize a execução do script
+Para executar o script a cada 5 minutos, você pode usar o cron. Abra o crontab para edição:
+
+crontab -e
+
+Adicione a seguinte linha ao final do arquivo:
+```
+* * * * * /root/script.sh
+```
+Salve e saia do editor. O cron agora executará o seu script a cada 5 minutos.
+
+Para verificar os arquivos de saída
+
+Digite os comandos abaixo:
+
+crontab -e = Criar um itinerário, para abrir o editor e criar um cronograma para cronometrar o tempo que vai ser executado o script.
+
+Depois digite 1 e de enter no terminal de comandos:
+
+```
+1
+```
+
+9. Para verificar se o servidor ngnix está funcionando 
+   Abra o browser clique na barra de pesquisa e digite localhost
+
+
+10. Para verificar se o servidor nginx está online digite o comando abixo no terminal:
+
+```
+ cat status_online.log
+```
+E vai aparecer as mensagens abaixo no terminal:
+```
+nginx Status: ONLINE - O serviço está rodando perfeitamente!
+nginx Status: ONLINE - O serviço está rodando perfeitamente!
+nginx Status: ONLINE - O serviço está rodando perfeitamente!
+```
+ Para parar o nginx e criar a pasta de serviço offline, digite no terminal de comando: 
+ ```
+systemctl stop nginx 
+ls
+```
+Para verificar se o nginx está offline digite o comando abaixo no terminal: 
+```
+status_online.log
+cat status_offline.log
+```
+
+E vai aparecer as mensagens abaixo no seu terminal:
+
+```
+nginx Status: OFFLINE - O serviço está parado!
+nginx Status: OFFLINE - O serviço está parado!
+```
