@@ -76,15 +76,11 @@ Adicione a seguinte linha ao final do arquivo:
 ```
 Salve e saia do editor. O cron agora executará o seu script a cada 5 minutos.
 
-Para verificar os arquivos de saída
-
-Digite os comandos abaixo:
-
 Depois digite 1 no terminal de comandos 
 
-1 = Para escolher o editor de texto.
+1 = Serve para escolher o editor de texto.
 
-9. Para verificar se o servidor ngnix está funcionando 
+9. Para verificar se o servidor ngnix está funcionando: 
    Abra o browser clique na barra de pesquisa e digite localhost
 
 
