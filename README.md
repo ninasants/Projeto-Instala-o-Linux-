@@ -52,7 +52,7 @@ Crie um arquivo de script chamado script.sh
 
 nano script.sh
 
-Cole o seguinte código no arquivo script.sh que está disponivel dentro do depósito projeto-instala-o-linux, script.sh no github.
+Cole o seguinte código no arquivo script.sh que está disponivel dentro do repositório projeto-instala-o-linux, script.sh no github.
 
 
 
