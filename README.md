@@ -72,7 +72,7 @@ crontab -e
 
 Adicione a seguinte linha ao final do arquivo:
 ```
-* * * * * /root/script.sh
+*/5 * * * * bash /home/mariana/projeto1uol/Projeto-instala-o-Linux-/script.sh 
 ```
 Salve e saia do editor. O cron agora executará o seu script a cada 5 minutos.
 
